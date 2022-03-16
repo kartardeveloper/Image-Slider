@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eea8a89c;
+}
+
+.image-corousel-container {
+    width: 50%;
+    height: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+}
+
+h1.title {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 90px;
+    text-shadow: 3px 3px 5px rgb(10, 10, 10);
+}
+
+.image-corousel {
+    display: flex;
+    transition: transform 0.5s ease ;
+}
+
+.image-corousel__images {
+    width: 100%;
+    display: block;
+}
+
+.image-corousel__images::selection {
+    background: white;
+}
+
+.button-container span {
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button-container #prev-btn{
+    position: absolute;
+    top: 47%;
+    left: 30%;
+}
+
+.button-container #next-btn{
+    position: absolute;
+    top: 47%;
+    right: 30%;
+}
+
+@media screen and (max-width: 1440px) {
+    .button-container #prev-btn{
+        top: 47%;
+        left: 26%;
+    }
+    
+    .button-container #next-btn{
+        top: 47%;
+        right: 26%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .button-container #prev-btn{
+        top: 45%;
+        left: 27%;
+    }
+    
+    .button-container #next-btn{
+        top: 45%;
+        right: 27%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1.title {
+        font-size: 2.2rem;
+    }
+
+    .image-corousel-container {
+        width: 70%;
+        height: 55%;
+    }
+
+    .button-container #prev-btn{
+        top: 44%;
+        left: 18%;
+    }
+    
+    .button-container #next-btn{
+        top: 44%;
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .image-corousel-container {
+        width: 70%;
+        height: 55%;
+    }
+
+    .button-container #prev-btn{
+        top: 38%;
+        left: 18%;
+    }
+    
+    .button-container #next-btn{
+        top: 38%;
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-corousel-container {
+        width: 90%;
+        height: 55%;
+    }
+
+    .button-container #prev-btn{
+        top: 38%;
+        left: 8%;
+    }
+    
+    .button-container #next-btn{
+        top: 38%;
+        right: 8%;
+    }
+}
