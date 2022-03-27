@@ -12,7 +12,9 @@ body {
 }
 
 .container {
+  max-height: 600px;
   height: 100%;
+  max-width: 1000px;
   width: 100%;
   position: relative;
   overflow: hidden;
